@@ -1,7 +1,20 @@
 ﻿Console.WriteLine("**** Fun with Basic Data Types ****");
-//DefaultDeclarations();
-//LocalVarDeclarations();
+DefaultDeclarations();
+LocalVarDeclarations();
 NewingDataTypes();
+ObjectFunctionality();
+
+static void ObjectFunctionality()
+{
+    Console.WriteLine("-> System.Object functionality");
+
+    int i = default;
+    int j = 0;
+    Console.WriteLine("i.ToString() = {0}", i.ToString());
+    Console.WriteLine("i.Equals(j) = {0}", i.Equals(j));
+    Console.WriteLine("i.GetHashCode() = {0}", i.GetHashCode());
+    Console.WriteLine("i.GetType() = {0}", i.GetType());
+}
 
 static void NewingDataTypes()
 {
@@ -12,6 +25,9 @@ static void NewingDataTypes()
     int i = new int(); // set to 0.
     double d = new double(); // set to 0.
     DateTime dt = new DateTime(); // set to 1/1/0001 12:00:00 AM
+
+    string example = "Test";
+    example.Equals(dt);
 
     Console.WriteLine("Default values (using 'new' keyword)");
     Console.WriteLine("bool: {0}", b);
