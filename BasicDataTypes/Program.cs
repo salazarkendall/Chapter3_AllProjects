@@ -1,8 +1,48 @@
 ﻿Console.WriteLine("**** Fun with Basic Data Types ****");
-DefaultDeclarations();
-LocalVarDeclarations();
-NewingDataTypes();
-ObjectFunctionality();
+
+//DefaultDeclarations();
+//LocalVarDeclarations();
+//NewingDataTypes();
+//ObjectFunctionality();
+DataTypeFunctionality();
+
+static void DataTypeFunctionality()
+{
+    Console.WriteLine("-> Data type functionality");
+
+    Console.WriteLine("Int Min: {0}", System.Int32.MinValue);
+    Console.WriteLine("Int Max: {0}", System.Int32.MaxValue);
+    
+    Console.WriteLine("Double Min: {0}", System.Double.MinValue);
+    Console.WriteLine("Double Max: {0}", System.Double.MaxValue);
+
+    Console.WriteLine("Double Epsilon: {0}", System.Double.Epsilon);
+    Console.WriteLine("Double Positive Infinity: {0}", System.Double.PositiveInfinity);
+    Console.WriteLine("Double Negative Infinity: {0}", System.Double.NegativeInfinity);
+
+    // Some variables can be declared implicitly:
+    var thisInteger = 1; // integer 
+    var thisDouble = 2.0; // double
+    var thisLong = 1L; // long
+    var thisFloat = 5.333F; // float
+
+    Console.WriteLine("{0} {1} {2} {3}", thisInteger, thisDouble, thisLong, thisFloat);
+
+    // Booleans can only be true of false:
+    bool thisBoolean1 = true;
+    bool thisBoolean2 = false;
+    Console.WriteLine("{0} {1}", thisBoolean1, thisBoolean2);
+
+    Console.WriteLine(System.Boolean.TrueString);
+    Console.WriteLine(System.Boolean.FalseString);
+
+    string trueString = "True";
+
+    if (System.Boolean.TrueString.Equals(trueString))
+    {
+        Console.WriteLine("This is true");
+    }
+}
 
 static void ObjectFunctionality()
 {
