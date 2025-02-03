@@ -4,7 +4,40 @@
 //LocalVarDeclarations();
 //NewingDataTypes();
 //ObjectFunctionality();
-DataTypeFunctionality();
+//DataTypeFunctionality();
+//CharFunctionality();
+//ParseFromStrings();
+ParseFromStringWithTryParse();
+
+static void ParseFromStringWithTryParse()
+{
+
+}
+
+static void ParseFromStrings()
+{
+    Console.WriteLine("-> Parsing");
+    bool b = bool.Parse("TRUE");
+    Console.WriteLine("Value of 'b': -> {0}", b);
+    double d = double.Parse("99.333");
+    Console.WriteLine("Value of 'd': -> {0}", d);
+    int i = int.Parse("8");
+    Console.WriteLine("Value of 'i': -> {0}", i);
+    char c = char.Parse("W");
+    Console.WriteLine("Value of 'c': -> {0}", c);
+}
+
+static void CharFunctionality()
+{
+    Console.WriteLine("-> Char type functionality");
+    char myChar = 'a';
+    Console.WriteLine("My character is: {0}", myChar);
+    Console.WriteLine("Is lowercase? {0}", char.IsLower(myChar));
+    Console.WriteLine("Is uppercase? {0}", char.IsUpper(myChar));
+    Console.WriteLine("Is digit? {0}", char.IsDigit(myChar));
+    Console.WriteLine("Is white space? {0}", char.IsWhiteSpace(myChar));
+    Console.WriteLine("Is punctuation? {0}", char.IsPunctuation(myChar));
+}
 
 static void DataTypeFunctionality()
 {
