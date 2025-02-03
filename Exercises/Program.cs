@@ -1,8 +1,8 @@
 ﻿using System.Numerics;
 
-// Exercise1();
-// Exercise2();
-// Exercise3();
+Exercise1();
+Exercise2();
+Exercise3();
 Excercise4();
 
 // Exercise 1:
@@ -89,3 +89,41 @@ static void Excercise4()
   Console.WriteLine("   -> DateOnly.FromDateTime(dt): {0}", myDateOnly);
   Console.WriteLine("   -> TimeOnly.FromDateTime(dt): {0}", myTimeOnly);
 }
+
+// Exercise 5:
+// Ask the user to enter a birthdate.
+// Use DateOnly to calculate how many days have passed since that date until today.
+
+// Exercise 6:
+// Create a program that receives two times entered by the user.
+// Use TimeOnly to calculate the difference between them.
+
+// Exercise 7:
+// Ask the user to enter a number in text format.
+// Use TryParse to attempt converting it to an int and a double.
+// If the conversion fails, display a message indicating that the value is invalid.
+
+// Exercise 8:
+// Create a program that receives a text input and tries to convert it into bool, int, double, and DateTime, displaying whether the conversion was successful or not for each type.
+
+// Exercise 9:
+// Ask the user to enter a character.
+// Verify if it is a letter, a number, a whitespace, or a punctuation mark.
+
+// Exercise 10:
+// Write a program that iterates through a text string and counts how many uppercase letters, lowercase letters, and numbers it contains.
+
+// Exercise 11:
+// Declare variables of different types (int, double, bool, char, string, DateTime).
+// Print their default values without assigning any initial value.
+
+// Exercise 12:
+// Use var to declare different variables and check what data type the compiler infers for each case.
+
+// Exercise 13:
+// Declare a generic object (object) and assign different data types (int, string, double).
+// Print its actual type using .GetType().
+
+// Exercise 14:
+// Compare two different objects using .Equals() and display the result.
+// Retrieve their hash values using .GetHashCode() and analyze them.
