@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
 
 Exercise1();
+Exercise2();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -9,19 +10,20 @@ Exercise1();
 // Display the results on the console.
 static void Exercise1()
 {
-  Console.WriteLine("Exercise1");
+  Console.WriteLine("---Exercise1---");
   Console.WriteLine("Please enter a very large number (more than 30 digits):");
   var input = Console.ReadLine();
   if (input?.Length > 30 && BigInteger.TryParse(input, out BigInteger result))
   {
-    Console.WriteLine("BIGINT: {0}", result);
-    Console.WriteLine("Is this number even? {0}", result.IsEven);
-    Console.WriteLine("Is this number power of two? {0}", result.IsPowerOfTwo);
+    Console.WriteLine("-> BIGINT: {0}", result);
+    Console.WriteLine("-> Is this number even? {0}", result.IsEven);
+    Console.WriteLine("-> Is this number power of two? {0}", result.IsPowerOfTwo);
   }
   else
   {
-    Console.WriteLine("Not a valid number");
+    Console.WriteLine("-> Not a valid number");
   }
+    Console.ReadLine();
 }
 
 // Exercise 2:
@@ -30,5 +32,14 @@ static void Exercise1()
 // Addition, subtraction, multiplication, division, and modulus.
 static void Exercise2()
 {
-  BigInteger bigInt1 =
+    Console.WriteLine("Excercise2");
+    string fakeNumber = "999999999999999999999999999999";
+    _ = BigInteger.TryParse(fakeNumber, out BigInteger bigInt1);
+    _ = BigInteger.TryParse(fakeNumber, out BigInteger bigInt2);
+    Console.WriteLine("The fake number is: {0}", fakeNumber);
+    Console.WriteLine("-> Addition:       {0}", BigInteger.Add(bigInt1, bigInt2));
+    Console.WriteLine("-> Subtraction:    {0}", BigInteger.Subtract(bigInt1, bigInt2));
+    Console.WriteLine("-> Multiplication: {0}", BigInteger.Multiply(bigInt1, bigInt2));
+    Console.WriteLine("-> Division:       {0}", BigInteger.Divide(bigInt1, bigInt2));
+    Console.ReadLine();
 }
