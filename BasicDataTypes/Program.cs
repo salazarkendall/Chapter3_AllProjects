@@ -7,29 +7,46 @@
 //DataTypeFunctionality();
 //CharFunctionality();
 //ParseFromStrings();
-ParseFromStringWithTryParse();
+// ParseFromStringWithTryParse();
+UseDateAndTime();
+
+static void UseDateAndTime()
+{
+    Console.WriteLine("-> Using DateTime and TimeSpan");
+    DateTime dt = new(1999, 02, 20);
+    Console.WriteLine("I was born in {0}, it was a {1}", dt, dt.DayOfWeek);
+
+    int additionalMonths = 2;
+    dt = dt.AddMonths(additionalMonths);
+    Console.WriteLine("{0} months later was {1}", additionalMonths, dt);
+    Console.WriteLine("Daylight savings: {0}", dt.IsDaylightSavingTime());
+
+    TimeSpan ts = new(4, 30, 0);
+    Console.WriteLine(ts);
+    Console.WriteLine("Current timespan: {0}, 15 minutes before was {1}", ts, ts.Subtract(new TimeSpan(0, 15, 0)));
+}
 
 static void ParseFromStringWithTryParse()
 {
-    System.Console.WriteLine("-> Parsing with TryParse()");
+    Console.WriteLine("-> Parsing with TryParse()");
     string booleanString = "Hello";
     if (bool.TryParse(booleanString, out bool b))
     {
-        System.Console.WriteLine("Value of B: {0}", b);
+        Console.WriteLine("Value of B: {0}", b);
     }
     else
     {
-        System.Console.WriteLine("Default value of B: {0}", b);
+        Console.WriteLine("Default value of B: {0}", b);
     }
 
-    string doubleString = "9.345";
+    string doubleString = "9a345";
     if (double.TryParse(doubleString, out double d))
     {
-        System.Console.WriteLine("Value of D: {0}", d);
+        Console.WriteLine("Value of D: {0}", d);
     }
     else
     {
-        System.Console.WriteLine("Default value of D: {0}", d);
+        Console.WriteLine("Failed to convert ({0}) to a double and the variable was assigned to the default ({1})", doubleString, d);
     }
 }
 
