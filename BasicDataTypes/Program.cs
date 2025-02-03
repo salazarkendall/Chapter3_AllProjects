@@ -11,7 +11,26 @@ ParseFromStringWithTryParse();
 
 static void ParseFromStringWithTryParse()
 {
+    System.Console.WriteLine("-> Parsing with TryParse()");
+    string booleanString = "Hello";
+    if (bool.TryParse(booleanString, out bool b))
+    {
+        System.Console.WriteLine("Value of B: {0}", b);
+    }
+    else
+    {
+        System.Console.WriteLine("Default value of B: {0}", b);
+    }
 
+    string doubleString = "9.345";
+    if (double.TryParse(doubleString, out double d))
+    {
+        System.Console.WriteLine("Value of D: {0}", d);
+    }
+    else
+    {
+        System.Console.WriteLine("Default value of D: {0}", d);
+    }
 }
 
 static void ParseFromStrings()
@@ -45,7 +64,7 @@ static void DataTypeFunctionality()
 
     Console.WriteLine("Int Min: {0}", System.Int32.MinValue);
     Console.WriteLine("Int Max: {0}", System.Int32.MaxValue);
-    
+
     Console.WriteLine("Double Min: {0}", System.Double.MinValue);
     Console.WriteLine("Double Max: {0}", System.Double.MaxValue);
 
