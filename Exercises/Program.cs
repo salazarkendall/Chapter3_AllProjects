@@ -1,8 +1,9 @@
 ﻿using System.Numerics;
 
-Exercise1();
-Exercise2();
-Exercise3();
+// Exercise1();
+// Exercise2();
+// Exercise3();
+Excercise4();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -64,4 +65,27 @@ static void Exercise3()
   {
     Console.WriteLine("-> Not a valid number");
   }
+}
+
+// Exercise 4:
+// Get the current date and time.
+// Extract only the date using DateOnly and only the time using TimeOnly.
+// Display both values on the console.
+static void Excercise4()
+{
+  Console.WriteLine("--- Exercise 4 ---");
+  DateTime dt = DateTime.Now;
+  DateOnly onlyDate = new(dt.Year, dt.Month, dt.Day);
+  TimeOnly onlyTime = new(dt.Hour, dt.Minute, dt.Second, dt.Millisecond);
+  Console.WriteLine("-> Original Date: {0}", dt);
+  Console.WriteLine("-> Date Only: {0}", onlyDate);
+  Console.WriteLine("-> Time Only: {0}", onlyTime);
+
+  // PRO TIP:
+  // Use DateOnly.FromDateTime and TimeOnly.FromDateTime constructors instead:
+  DateOnly myDateOnly = DateOnly.FromDateTime(dt);
+  TimeOnly myTimeOnly = TimeOnly.FromDateTime(dt);
+  Console.WriteLine("-> PRO TIP: use methods to simplify code:");
+  Console.WriteLine("   -> DateOnly.FromDateTime(dt): {0}", myDateOnly);
+  Console.WriteLine("   -> TimeOnly.FromDateTime(dt): {0}", myTimeOnly);
 }
