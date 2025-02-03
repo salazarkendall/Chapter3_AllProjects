@@ -1,9 +1,5 @@
 ﻿using System.Numerics;
 
-// Using BIGINT
-
-
-
 Exercise1();
 
 // Exercise 1:
