@@ -8,7 +8,19 @@
 //CharFunctionality();
 //ParseFromStrings();
 // ParseFromStringWithTryParse();
-UseDateAndTime();
+// UseDateAndTime();
+UseDateOnlyAndTimeOnly();
+
+static void UseDateOnlyAndTimeOnly()
+{
+    // DateOnly and TimeOnly structs aligns with the SQL Server Date type and Time tipe respectively
+    Console.WriteLine("-> Using DateOnly and TimeOnly");
+    DateOnly myDateOnly = new(1999, 02, 20);
+    Console.WriteLine("My BD was on {0}", myDateOnly);
+
+    TimeOnly myTimeOnly = new(0, 45, 0, 0);
+    Console.WriteLine("My TimeOnly variable contains: {0}", myTimeOnly);
+}
 
 static void UseDateAndTime()
 {
