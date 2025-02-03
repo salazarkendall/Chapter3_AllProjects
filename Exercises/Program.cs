@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
 
-// Exercise1();
-// Exercise2();
+Exercise1();
+Exercise2();
 Exercise3();
 
 // Exercise 1:
@@ -51,12 +51,17 @@ static void Exercise3()
 {
   Console.WriteLine("--- Exercise 3 ---");
   Console.WriteLine("Please enter a number (we are going to make a factorial out of it!)");
-  _ = int.TryParse(Console.ReadLine(), out int baseNumber);
-  BigInteger bigNumber = default;
-  Console.WriteLine(bigNumber);
-  for (int i = 0; i <= baseNumber; i++)
+  if (int.TryParse(Console.ReadLine(), out int baseNumber))
   {
-
+    BigInteger bigNumber = BigInteger.One;
+    for (int i = 1; i <= baseNumber; i++)
+    {
+      bigNumber = BigInteger.Multiply(bigNumber, i);
+    }
+    Console.WriteLine("-> {0}! == {1}", baseNumber, bigNumber);
   }
-  Console.WriteLine("-> {0}! == {1}", baseNumber, bigNumber);
+  else
+  {
+    Console.WriteLine("-> Not a valid number");
+  }
 }
