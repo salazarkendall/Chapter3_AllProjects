@@ -4,7 +4,8 @@
 // Exercise2();
 // Exercise3();
 // Exercise4();
-Exercise5();
+// Exercise5();
+Exercise6();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -109,11 +110,20 @@ static void Exercise5()
   }
 }
 
-
-
 // Exercise 6:
 // Create a program that receives two times entered by the user.
 // Use TimeOnly to calculate the difference between them.
+static void Exercise6()
+{
+  Console.WriteLine("--- Exercise 6 ---");
+  Console.WriteLine("   -> Hit the keyboard now:");
+  Console.ReadKey();
+  TimeOnly firstTimeStamp = TimeOnly.FromDateTime(DateTime.Now);
+  Console.WriteLine("   -> Now hit the keyboard again:");
+  Console.ReadKey();
+  TimeOnly secondTimeStamp = TimeOnly.FromDateTime(DateTime.Now);
+  Console.WriteLine($"   -> Difference between keyboard hits: {secondTimeStamp - firstTimeStamp}");
+}
 
 // Exercise 7:
 // Ask the user to enter a number in text format.
