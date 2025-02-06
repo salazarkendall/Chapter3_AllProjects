@@ -3,7 +3,7 @@
 Exercise1();
 Exercise2();
 Exercise3();
-Excercise4();
+Exercise4();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -71,7 +71,7 @@ static void Exercise3()
 // Get the current date and time.
 // Extract only the date using DateOnly and only the time using TimeOnly.
 // Display both values on the console.
-static void Excercise4()
+static void Exercise4()
 {
   Console.WriteLine("--- Exercise 4 ---");
   DateTime dt = DateTime.Now;
@@ -93,6 +93,20 @@ static void Excercise4()
 // Exercise 5:
 // Ask the user to enter a birthdate.
 // Use DateOnly to calculate how many days have passed since that date until today.
+static void Excercise5()
+{
+  Console.WriteLine("--- Exercise 5 ---");
+  Console.WriteLine("-> Please enter your birthday");
+  Console.WriteLine("   -> Year");
+  int year = Console.ReadLine();
+  Console.WriteLine("   -> Month");
+  int month = Console.ReadLine();
+  Console.WriteLine("   -> Day");
+  int day = Console.ReadLine();
+  DateOnly bday = new()
+}
+
+
 
 // Exercise 6:
 // Create a program that receives two times entered by the user.
