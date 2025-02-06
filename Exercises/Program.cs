@@ -1,9 +1,10 @@
 ﻿using System.Numerics;
 
-Exercise1();
-Exercise2();
-Exercise3();
-Exercise4();
+// Exercise1();
+// Exercise2();
+// Exercise3();
+// Exercise4();
+Exercise5();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -34,7 +35,7 @@ static void Exercise1()
 // Addition, subtraction, multiplication, division, and modulus.
 static void Exercise2()
 {
-  Console.WriteLine("--- Excercise 2 ---");
+  Console.WriteLine("--- Exercise 2 ---");
   string fakeNumber = "999999999999999999999999999999";
   _ = BigInteger.TryParse(fakeNumber, out BigInteger bigInt1);
   _ = BigInteger.TryParse(fakeNumber, out BigInteger bigInt2);
@@ -93,17 +94,19 @@ static void Exercise4()
 // Exercise 5:
 // Ask the user to enter a birthdate.
 // Use DateOnly to calculate how many days have passed since that date until today.
-static void Excercise5()
+static void Exercise5()
 {
   Console.WriteLine("--- Exercise 5 ---");
-  Console.WriteLine("-> Please enter your birthday");
-  Console.WriteLine("   -> Year");
-  int year = Console.ReadLine();
-  Console.WriteLine("   -> Month");
-  int month = Console.ReadLine();
-  Console.WriteLine("   -> Day");
-  int day = Console.ReadLine();
-  DateOnly bday = new()
+  Console.WriteLine("-> Please enter your birthday (YYYY-MM-DD)");
+  if (DateOnly.TryParse(Console.ReadLine(), out DateOnly bday))
+  {
+    DateOnly today = DateOnly.FromDateTime(DateTime.Today);
+    Console.WriteLine($"Today is {today}, your birthday is {bday}, {today.DayNumber - bday.DayNumber} days have passed since that date until today");
+  }
+  else
+  {
+    Console.WriteLine("Invalid date format");
+  }
 }
 
 
