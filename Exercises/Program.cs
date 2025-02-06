@@ -6,7 +6,8 @@
 // Exercise4();
 // Exercise5();
 // Exercise6();
-Exercise7();
+// Exercise7();
+Exercise8();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -151,6 +152,49 @@ static void Exercise7()
 
 // Exercise 8:
 // Create a program that receives a text input and tries to convert it into bool, int, double, and DateTime, displaying whether the conversion was successful or not for each type.
+static void Exercise8()
+{
+  Console.WriteLine("--- Exercise 8 ---");
+  Console.WriteLine("-> Enter a value:");
+
+  string? input = Console.ReadLine();
+  if (bool.TryParse(input, out bool boolConversion))
+  {
+    Console.WriteLine($"   -> Successful boolean conversion: {boolConversion}");
+  }
+  else
+  {
+    Console.WriteLine("   -> Unsuccessful boolean conversion");
+  }
+
+  if (int.TryParse(input, out int intResult))
+  {
+    Console.WriteLine($"   -> Successful int conversion: {intResult}");
+  }
+  else
+  {
+    Console.WriteLine("   -> Unsuccessful int conversion");
+  }
+
+  if (double.TryParse(input, out double doubleConversion))
+  {
+    Console.WriteLine($"   -> Successful double conversion: {doubleConversion}");
+  }
+  else
+  {
+    Console.WriteLine("   -> Unsuccessful double conversion");
+  }
+
+  if (DateTime.TryParse(input, out DateTime dateTimeConversion))
+  {
+    Console.WriteLine($"   -> Successful DateTime conversion: {dateTimeConversion}");
+  }
+  else
+  {
+    Console.WriteLine("   -> Unsuccessful DateTime conversion");
+  }
+
+}
 
 // Exercise 9:
 // Ask the user to enter a character.
