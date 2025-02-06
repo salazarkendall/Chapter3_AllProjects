@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises", "Exercises\Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeConversions", "TypeConversions\TypeConversions.csproj", "{0DBA38B1-A64A-496C-9C31-A89311883A98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicApi", "BasicApi\BasicApi.csproj", "{356C6E07-DF35-4013-9A69-20A76D32597D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0DBA38B1-A64A-496C-9C31-A89311883A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBA38B1-A64A-496C-9C31-A89311883A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DBA38B1-A64A-496C-9C31-A89311883A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356C6E07-DF35-4013-9A69-20A76D32597D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356C6E07-DF35-4013-9A69-20A76D32597D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356C6E07-DF35-4013-9A69-20A76D32597D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356C6E07-DF35-4013-9A69-20A76D32597D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
