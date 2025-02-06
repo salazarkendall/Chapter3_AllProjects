@@ -7,7 +7,8 @@
 // Exercise5();
 // Exercise6();
 // Exercise7();
-Exercise8();
+// Exercise8();
+Exercise9();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -199,6 +200,16 @@ static void Exercise8()
 // Exercise 9:
 // Ask the user to enter a character.
 // Verify if it is a letter, a number, a whitespace, or a punctuation mark.
+static void Exercise9()
+{
+  Console.WriteLine("--- Exercise 9 ---");
+  Console.WriteLine("-> Enter a character:");
+  var inputCharacter = Console.ReadKey().KeyChar;
+  Console.WriteLine($"   -> '{inputCharacter}' is{(char.IsLetter(inputCharacter) ? "" : " not")} a letter");
+  Console.WriteLine($"   -> '{inputCharacter}' is{(char.IsNumber(inputCharacter) ? "" : " not")} a number");
+  Console.WriteLine($"   -> '{inputCharacter}' is{(char.IsWhiteSpace(inputCharacter) ? "" : " not")} a whitespace");
+  Console.WriteLine($"   -> '{inputCharacter}' is{(char.IsPunctuation(inputCharacter) ? "" : " not")} a punctuation mark");
+}
 
 // Exercise 10:
 // Write a program that iterates through a text string and counts how many uppercase letters, lowercase letters, and numbers it contains.
