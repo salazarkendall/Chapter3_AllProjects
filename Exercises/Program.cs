@@ -1,14 +1,14 @@
 ﻿using System.Numerics;
 
-// Exercise1();
-// Exercise2();
-// Exercise3();
-// Exercise4();
-// Exercise5();
-// Exercise6();
-// Exercise7();
-// Exercise8();
-// Exercise9();
+Exercise1();
+Exercise2();
+Exercise3();
+Exercise4();
+Exercise5();
+Exercise6();
+Exercise7();
+Exercise8();
+Exercise9();
 Exercise10();
 
 // Exercise 1:
@@ -243,18 +243,3 @@ static void Exercise10()
     Console.WriteLine("Text not valid");
   }
 }
-
-// Exercise 11:
-// Declare variables of different types (int, double, bool, char, string, DateTime).
-// Print their default values without assigning any initial value.
-
-// Exercise 12:
-// Use var to declare different variables and check what data type the compiler infers for each case.
-
-// Exercise 13:
-// Declare a generic object (object) and assign different data types (int, string, double).
-// Print its actual type using .GetType().
-
-// Exercise 14:
-// Compare two different objects using .Equals() and display the result.
-// Retrieve their hash values using .GetHashCode() and analyze them.
