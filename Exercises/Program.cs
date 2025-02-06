@@ -8,7 +8,8 @@
 // Exercise6();
 // Exercise7();
 // Exercise8();
-Exercise9();
+// Exercise9();
+Exercise10();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -213,6 +214,35 @@ static void Exercise9()
 
 // Exercise 10:
 // Write a program that iterates through a text string and counts how many uppercase letters, lowercase letters, and numbers it contains.
+static void Exercise10()
+{
+  Console.WriteLine("--- Exercise 10 ---");
+  Console.WriteLine("-> Enter a text:");
+  string? text = Console.ReadLine();
+  if (text != null)
+  {
+    int uppercaseCount = 0;
+    int lowercaseCount = 0;
+    int numberCount = 0;
+
+    foreach (char letter in text)
+    {
+      if (char.IsUpper(letter)) uppercaseCount++;
+      if (char.IsLower(letter)) lowercaseCount++;
+      if (char.IsDigit(letter)) numberCount++;
+    }
+
+    Console.WriteLine($@"
+    -> {uppercaseCount} Uppercase Characters
+    -> {lowercaseCount} Lowercase Characters
+    -> {numberCount} Digit Characters
+    ");
+  }
+  else
+  {
+    Console.WriteLine("Text not valid");
+  }
+}
 
 // Exercise 11:
 // Declare variables of different types (int, double, bool, char, string, DateTime).
