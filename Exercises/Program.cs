@@ -5,7 +5,8 @@
 // Exercise3();
 // Exercise4();
 // Exercise5();
-Exercise6();
+// Exercise6();
+Exercise7();
 
 // Exercise 1:
 // Ask the user to enter a very large number (more than 30 digits).
@@ -129,6 +130,24 @@ static void Exercise6()
 // Ask the user to enter a number in text format.
 // Use TryParse to attempt converting it to an int and a double.
 // If the conversion fails, display a message indicating that the value is invalid.
+static void Exercise7()
+{
+  Console.WriteLine("--- Exercise 7 ---");
+  Console.WriteLine("-> Please enter a valid number");
+  string? input = Console.ReadLine();
+  if (int.TryParse(input, out int inputInt))
+  {
+    Console.WriteLine($"   -> Input int value: {inputInt}");
+  }
+  else if (double.TryParse(input, out double inputDouble))
+  {
+    Console.WriteLine($"   -> Input double value: {inputDouble}");
+  }
+  else
+  {
+    Console.WriteLine("-> Not a valid number");
+  }
+}
 
 // Exercise 8:
 // Create a program that receives a text input and tries to convert it into bool, int, double, and DateTime, displaying whether the conversion was successful or not for each type.
