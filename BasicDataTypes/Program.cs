@@ -12,11 +12,78 @@ Console.WriteLine("**** Fun with Basic Data Types ****");
 // ParseFromStringWithTryParse();
 // UseDateAndTime();
 // UseDateOnlyAndTimeOnly();
-UseBigInteger();
+// UseBigInteger();
+// DigitSeparator();
+// BasicStringFunctionality();
+StringEquality();
+
+static void StringEquality()
+{
+    Console.WriteLine("-> String Equality");
+    string string1 = "Hello there!";
+    string string2 = "Kendall Salazar";
+    Console.WriteLine($"string1 -> {string1}");
+    Console.WriteLine($"string2 -> {string2}");
+
+    // Equality test:
+    Console.WriteLine($"string1 == string2 -> {string1 == string2}");
+    Console.WriteLine($"string1.Equals(string2) -> {string1.Equals(string2)}");
+    Console.WriteLine($"string2.Equals(string1) -> {string2.Equals(string1)}");
+
+    string test1 = "café";
+    string test2 = "cafe";
+
+    Console.WriteLine($"café == cafe ? {test1 == test2}");
+    Console.WriteLine($"café == cafe ? {test1.Equals(test2)}");
+    Console.WriteLine($"café == cafe ? {test1.CompareTo(test2)}");
+    Console.WriteLine($"café == cafe ? {string.Compare(test1, test2, StringComparison.InvariantCultureIgnoreCase)}");
+
+
+    Console.ReadLine();
+}
+
+static void StringConcatenation()
+{
+    Console.WriteLine("-> String concatenation:");
+    string s1 = "Programming the ";
+    string s2 = "PsychoDrill (PTP)";
+    string s3 = String.Concat(s1, s2);
+    string s4 = s1 + s2; //Internally, the compiler make use of String.Concat();
+    Console.WriteLine(s3);
+    Console.WriteLine();
+}
+
+static void BasicStringFunctionality()
+{
+    Console.WriteLine("-> Basic String functionality:");
+    string firstName = "Freddy";
+    Console.WriteLine("Value of firstName: {0}", firstName);
+    Console.WriteLine("firstName has {0} characters.", firstName.Length);
+    Console.WriteLine("firstName in uppercase: {0}", firstName.ToUpper());
+    Console.WriteLine("firstName in lowercase: {0}", firstName.ToLower());
+    Console.WriteLine("firstName contains the letter y?: {0}",
+    firstName.Contains("y"));
+    Console.WriteLine("New first name: {0}", firstName.Replace("dy", ""));
+    Console.WriteLine();
+}
+
+static void DigitSeparator()
+{
+    Console.WriteLine("-> Digit Separator");
+    int myInteger = 1_2_3;
+    double myDouble = 12.34_56_78;
+    Console.WriteLine($@"
+    -> Integer: {myInteger}
+    -> Double: {myDouble}
+    ");
+}
+
+
+// Exercises material end here
 
 static void UseBigInteger()
 {
-    Console.WriteLine("=> Use BigInteger:");
+    Console.WriteLine("-> Use BigInteger:");
     BigInteger biggy = BigInteger.Parse("9999999999999999999999999999999999999999999999");
     Console.WriteLine("Value of biggy is {0}", biggy);
     Console.WriteLine("Is biggy an even value?: {0}", biggy.IsEven);
