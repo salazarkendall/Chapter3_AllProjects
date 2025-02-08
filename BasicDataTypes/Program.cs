@@ -18,7 +18,45 @@ Console.WriteLine("**** Fun with Basic Data Types ****");
 // BasicStringFunctionality();
 //StringEquality();
 //StringEqualitySpecifyingCompareRules();
-FunWithStringBuilder();
+//FunWithStringBuilder();
+//DeclareExplicitVars();
+//DeclareImplicitNumerics();
+LinqQueryOverInts();
+
+static void LinqQueryOverInts()
+{
+    int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    var subset = from i in numbers where i < 10 select i;
+    Console.WriteLine("Values in subset");
+    foreach (var number in subset)
+    {
+        Console.WriteLine($"{number}");
+    }
+    Console.WriteLine();
+
+    // What type is subset?
+    Console.WriteLine(subset.GetType().Name);
+    Console.WriteLine(subset.GetType().Namespace);
+}
+
+static void DeclareImplicitNumerics()
+{
+    var myUInt = 0u;
+    Console.WriteLine(myUInt.GetType().Name);
+}
+
+static void DeclareExplicitVars()
+{
+    // Implicity typed local variables
+    var isActive = true;
+    var soccerScore = 3;
+    var zipCode = "10201";
+
+    // Print out the underlying type
+    Console.WriteLine($"isActive type {isActive.GetType().Name}");
+    Console.WriteLine($"soccerScore type {soccerScore.GetType().Name}");
+    Console.WriteLine($"zipCode type {zipCode.GetType().Name}");
+}
 
 static void FunWithStringBuilder()
 {
