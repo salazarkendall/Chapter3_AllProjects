@@ -1,7 +1,23 @@
 ﻿Console.WriteLine("--- Fun With Arrays ---");
-SimpleArrays();
-ArrayInitialization();
+// SimpleArrays();
+// ArrayInitialization();
+DeclareImplicitArrays();
 Console.ReadLine();
+
+static void DeclareImplicitArrays()
+{
+  // a is really int[]
+  var a = new[] { 1, 10, 100, 1000 };
+  Console.WriteLine($"a is a: {a}");
+
+  // b is really double[]
+  var b = new[] { 1, 1.1, 1.11, 1.111 };
+  Console.WriteLine($"b is a: {b}");
+
+  // c is really string[]
+  var c = new[] { "hello", null, "there" };
+  Console.WriteLine($"c is a: {c}");
+}
 
 static void ArrayInitialization()
 {
