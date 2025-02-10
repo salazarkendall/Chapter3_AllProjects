@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationsAndDecisions", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithArrays", "FunWithArrays\FunWithArrays.csproj", "{1D66E7F8-FC48-4306-A0AA-9F7034832E28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithLocalFunctions", "FunWithLocalFunctions\FunWithLocalFunctions.csproj", "{572E2A05-F424-40C5-A8D5-9B58164858D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1D66E7F8-FC48-4306-A0AA-9F7034832E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D66E7F8-FC48-4306-A0AA-9F7034832E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D66E7F8-FC48-4306-A0AA-9F7034832E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
