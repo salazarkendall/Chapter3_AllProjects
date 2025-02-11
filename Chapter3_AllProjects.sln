@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithArrays", "FunWithArr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithLocalFunctions", "FunWithLocalFunctions\FunWithLocalFunctions.csproj", "{572E2A05-F424-40C5-A8D5-9B58164858D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithMethods", "FunWithMethods\FunWithMethods.csproj", "{860D1C62-450E-472C-ADEF-40C9DDFFDA12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{572E2A05-F424-40C5-A8D5-9B58164858D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860D1C62-450E-472C-ADEF-40C9DDFFDA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860D1C62-450E-472C-ADEF-40C9DDFFDA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860D1C62-450E-472C-ADEF-40C9DDFFDA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860D1C62-450E-472C-ADEF-40C9DDFFDA12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
