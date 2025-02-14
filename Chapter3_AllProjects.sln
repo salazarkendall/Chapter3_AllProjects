@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithMethods", "FunWithMe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithEnumns", "FunWithEnumns\FunWithEnumns.csproj", "{142E6959-08B5-489B-B2C8-604914A48D6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{1D8CA515-258E-4EFF-BBA6-B1069533193A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{142E6959-08B5-489B-B2C8-604914A48D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{142E6959-08B5-489B-B2C8-604914A48D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{142E6959-08B5-489B-B2C8-604914A48D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8CA515-258E-4EFF-BBA6-B1069533193A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8CA515-258E-4EFF-BBA6-B1069533193A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8CA515-258E-4EFF-BBA6-B1069533193A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8CA515-258E-4EFF-BBA6-B1069533193A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
