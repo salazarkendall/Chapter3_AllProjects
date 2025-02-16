@@ -24,7 +24,7 @@ var numbers = new int[1, 2, 3, 4]; // Inicializacion usando var
 
 // Arrays multinivel:
 // -> Array rectangular (Bidimensional)
-int[,] matrix1 = new int[3,3];
+int[,] matrix1 = new int[3, 3];
 matrix1[1, 1] = 10000;
 Console.WriteLine(matrix1[1, 1]);
 
@@ -45,12 +45,11 @@ foreach (string word in phrase[..])
 }
 
 Console.WriteLine("New phrase:\n");
-foreach(string word in phrase[3..])
+foreach (string word in phrase[3..])
 {
     Console.WriteLine(word);
 }
 
 Console.WriteLine("\nLast Word");
 Console.WriteLine(phrase[^1]);
-
 

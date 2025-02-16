@@ -1,8 +1,25 @@
 ﻿Console.WriteLine("---- Fun with Enums ----");
 
 // Make an EmployeeTypeEnum variable.
-AskForBonus(EmployeeTypeEnum.Contractor);
+// AskForBonus(EmployeeTypeEnum.Contractor);
+// Type myEnumType = Enum.GetUnderlyingType(typeof(NotSequentialEmployeeTypeEnum));
+// NotSequentialEmployeeTypeEnum employeeType = NotSequentialEmployeeTypeEnum.Contractor;
+// Console.WriteLine($"{employeeType} = {(byte)employeeType}");
+
+PrintValues(NotSequentialEmployeeTypeEnum.Contractor);
+
 Console.ReadLine();
+
+static void PrintValues(System.Enum e)
+{
+  Array enumData = Enum.GetValues(e.GetType());
+  for (int i = 0; i < enumData.Length; i++)
+  {
+    Console.WriteLine("Name: {0}, Value: {0:D}",
+    enumData.GetValue(i));
+  }
+}
+
 // Enums as parameters.
 static void AskForBonus(EmployeeTypeEnum employeeType)
 {

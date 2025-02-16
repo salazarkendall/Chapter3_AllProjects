@@ -1,4 +1,15 @@
-﻿static int AddWrapper(int x, int y)
+﻿EnterLogData(message: "This is an error", owner: "DB");
+EnterLogData(message: "This is another");
+EnterLogData(message: null);
+
+static void EnterLogData(string message, string owner = "Programmer")
+{
+  if (message == null) throw new ArgumentNullException(message);
+  Console.WriteLine("Error: {0}", message);
+  Console.WriteLine("Owner of Error: {0}", owner);
+}
+
+static int AddWrapper(int x, int y)
 {
   //Do some validation here
   return Add();
