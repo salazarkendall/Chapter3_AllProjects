@@ -22,7 +22,14 @@ anotherReadOnlyPoint.Display("AnotherReadOnlyPoint");
 PointWithReadOnly pointWithReadOnly = new(31, 89, "Point with RO");
 pointWithReadOnly.Display("Point with readonly");
 
-// PointWithRef refPoint = new();
+PointWithRef refPoint = new();
+
+// Los structs locales se desechan del stack cuando el metodo retorna.
+static void LocalValueTypes()
+{
+  int i = 0;            // <- int es un struct (System.Int32).
+  Point point = new();  // <- Point tambien es un struct.
+} // i y point son desechados del stack aqui.
 
 struct Point
 {

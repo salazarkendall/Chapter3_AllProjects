@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithBitwiseOperations", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithStructs", "FunWithStructs\FunWithStructs.csproj", "{82E2ABDA-E3D0-4164-B5BC-3B8EBA80AA00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithValueAndRefTypes", "FunWithValueAndRefTypes\FunWithValueAndRefTypes.csproj", "{AA449908-881B-4E4E-82E0-177D7AFDFEBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,18 @@ Global
 		{82E2ABDA-E3D0-4164-B5BC-3B8EBA80AA00}.Release|x64.Build.0 = Release|Any CPU
 		{82E2ABDA-E3D0-4164-B5BC-3B8EBA80AA00}.Release|x86.ActiveCfg = Release|Any CPU
 		{82E2ABDA-E3D0-4164-B5BC-3B8EBA80AA00}.Release|x86.Build.0 = Release|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Debug|x64.Build.0 = Debug|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Release|x64.ActiveCfg = Release|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Release|x64.Build.0 = Release|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{AA449908-881B-4E4E-82E0-177D7AFDFEBA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
