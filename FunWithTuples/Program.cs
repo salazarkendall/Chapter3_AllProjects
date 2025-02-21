@@ -70,7 +70,7 @@ static (int a, bool b, char c) FillTheseValues2()
 static (string name, string lastName) SplitName(string fullName)
 {
   string name = "", lastName = "";
-  string[] splittedName = fullName.Split("");
+  string[] splittedName = fullName.Split(" ");
   if (splittedName.Length == 2)
   {
     name = splittedName[0];
